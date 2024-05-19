@@ -3,7 +3,6 @@ import streamlit as st
 from langchain_openai import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 import os
-import secret_keys  # 外部ファイルにAPI keyを保存
 
 # Streamlit Community Cloudの「Secrets」からOpenAI API keyを取得
 os.environ["OPENAI_API_KEY"] = st.secrets.OpenAIAPI.openai_api_key
